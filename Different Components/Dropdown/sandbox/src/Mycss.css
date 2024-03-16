@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+#removedot {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#removedot li {
+  margin-top: 8px;
+}
+.dropdown {
+  opacity: 0; /* Initially hide dropdown */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+  width: 100px;
+  height: auto; /* You can remove this line if you want the height to adjust based on content */
+  border: 1px solid rgb(123, 119, 119);
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  align-items: center; /* This property is for flex containers */
+  z-index: 5;
+}
+.dropbtn {
+  display: flex;
+  justify-content: start;
+}
+
+.open {
+  opacity: 1; /* Show dropdown when open */
+}
+.close {
+  transition: display 1.3s ease; /* Smooth transition for display property */
+  display: none;
+}

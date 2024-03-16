@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Flexbox align 0 — starting code</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 70%;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      button {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 15%;
+      }
+
+      div {
+        height: 100px;
+        border: 1px solid black;
+      }
+      div {
+        display: flex;
+        align-items: center; /* align on cross axis*/
+        /* space-around and space-between are same only difference is space-aroud leave space either end whereas space-between not 
+        **both align item on main axis
+        **The justify-items property is ignored in flexbox layouts. */
+        /* justify-items: stretch; */
+        justify-content: space-around;
+      }
+      /* override to align-items property */
+      button:first-child {
+        align-self: flex-end;
+      }
+      button:first-child {
+  order: 1;
+}
+
+
+      /* Add your flexbox CSS below here */
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Smile</button>
+      <button>Laugh</button>
+      <button>Wink</button>
+      <button>Shrug</button>
+      <button>Blush</button>
+    </div>
+  </body>
+</html>
